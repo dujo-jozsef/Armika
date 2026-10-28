@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ezt magyarok találták fel</title>
+    <style>
+        body {
+            background-color: rgb(245, 243, 235);
+            font-family: Arial, sans-serif;
+            margin: 0px;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: rgb(15, 80, 50);
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+        .zaszlo {
+            width: 200px;
+            height: 12px;
+            margin: 0 auto 30px auto;
+            background: linear-gradient(to bottom, rgb(200,30,40) 33%, rgb(255,255,255) 33% 66%, rgb(15,110,60) 66%);
+            border: 1px solid rgb(200,200,200);
+        }
+        .grid-kontener {
+            display: grid;
+            grid-template-columns: 450px 450px;
+            gap: 20px;
+            justify-content: center;
+        }
+        .kartya {
+            background-color: rgb(255, 255, 255);
+            border: 3px solid rgb(15, 80, 50);
+            border-radius: 15px;
+            padding: 15px;
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+        }
+        /* A képen a keretek váltakozva piros és zöld színűek */
+        .kartya:nth-child(4n+1), .kartya:nth-child(4n+4) {
+            border-color: rgb(170, 30, 40);
+        }
+        .kartya:hover {
+            background-color: rgb(230, 245, 235);
+            cursor: pointer;
+        }
+        .kartya img {
+            width: 120px;
+            height: 120px;
+            object-fit: contain;
+            margin-right: 20px;
+        }
+        .talalmany-nev {
+            font-size: 22px;
+            font-weight: bold;
+            color: rgb(15, 80, 50);
+            margin-bottom: 5px;
+        }
+        .feltalalo-nev {
+            font-size: 18px;
+            color: rgb(60, 60, 60);
+        }
+        .also-kerdes {
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            color: rgb(15, 80, 50);
+            margin-top: 40px;
+        }
+        @media (max-width: 960px) {
+            .grid-kontener { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>EZT MAGYAROK TALÁLTÁK FEL</h1>
+    <div class="zaszlo"></div>
+
+    <div class="grid-kontener">
+
+        <!-- 1. Rubik-kocka -->
+        <a href="rubik.html" target="_blank" class="kartya">
+            <img src="rubik.png" alt="Rubik-kocka">
+            <div>
+                <div class="talalmany-nev">Rubik-kocka</div>
+                <div class="feltalalo-nev">Rubik Ernő</div>
+            </div>
+        </a>
+
+        <!-- 2. Golyóstoll -->
+        <a href="biro.html" target="_blank" class="kartya">
+            <img src="golyostoll.png" alt="Golyóstoll">
+            <div>
+                <div class="talalmany-nev">Golyóstoll</div>
+                <div class="feltalalo-nev">Bíró László József</div>
+            </div>
+        </a>
+
+        <!-- 3. Zajtalan gyufa -->
+        <a href="irinyi.html" target="_blank" class="kartya">
+            <img src="gyufa.png" alt="Zajtalan gyufa">
+            <div>
+                <div class="talalmany-nev">Zajtalan gyufa</div>
+                <div class="feltalalo-nev">Irinyi János</div>
+            </div>
+        </a>
+
+        <!-- 4. Holográfia -->
+        <a href="gabor.html" target="_blank" class="kartya">
+            <img src="holografia.png" alt="Holográfia">
+            <div>
+                <div class="talalmany-nev">Holográfia</div>
+                <div class="feltalalo-nev">Gábor Dénes</div>
+            </div>
+        </a>
+
+        <!-- 5. Dinamó -->
+        <a href="jedlik.html" target="_blank" class="kartya">
+            <img src="dinamo.png" alt="Dinamó">
+            <div>
+                <div class="talalmany-nev">Dinamó</div>
+                <div class="feltalalo-nev">Jedlik Ányos</div>
+            </div>
+        </a>
+
+        <!-- 6. Porlasztó -->
+        <a href="banki_csonka.html" target="_blank" class="kartya">
+            <img src="porlaszto.png" alt="Porlasztó">
+            <div>
+                <div class="talalmany-nev">Porlasztó</div>
+                <div class="feltalalo-nev">Bánki Donát és Csonka János</div>
+            </div>
+        </a>
+
+        <!-- 7. Transzformátor -->
+        <a href="transzformator.html" target="_blank" class="kartya">
+            <img src="transzformator.png" alt="Transzformátor">
+            <div>
+                <div class="talalmany-nev">Transzformátor</div>
+                <div class="feltalalo-nev">Bláthy, Déri és Zipernowsky</div>
+            </div>
+        </a>
+
+        <!-- 8. A C-vitamin felfedezése -->
+        <a href="szentgyorgyi.html" target="_blank" class="kartya">
+            <img src="cvitamin.png" alt="A C-vitamin felfedezése">
+            <div>
+                <div class="talalmany-nev">A C-vitamin felfedezése</div>
+                <div class="feltalalo-nev">Szent-Györgyi Albert</div>
+            </div>
+        </a>
+
+    </div>
+
+    <div class="also-kerdes">Melyikre vagy a legbüszkébb?</div>
+
+</body>
+</html>
